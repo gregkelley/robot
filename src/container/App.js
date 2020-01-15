@@ -26,8 +26,9 @@ class App extends Component {   // can also use: React.Component if not pulling 
     //   this.setState({robots: users});
     // });
 
-    //fetch('https://jsonplaceholder.typicode.com/users')
-    fetch('https://my-json-server.typicode.com/gregkelley/robotusers')
+    // this doesn't fukin work. too many restrictions.
+    //fetch('https://my-json-server.typicode.com/gregkelley/robotusers')
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(response=> response.json())
     .then(users => this.setState({robots: users}));
   }
